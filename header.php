@@ -186,13 +186,13 @@ $content = apply_filters('the_content', substr(strip_tags($post->post_content), 
         <?php
 		}?>
         <div class="container">
+            <div class="toggle">
+                <a class="toggleMenu" href="#"><?php _e('Menu','restaurant'); ?></a>
+             </div><!-- toggle --> 
             <div class="logo">
                         <h1><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
                         <span class="tagline"><?php bloginfo('description'); ?></span>
             </div><!-- logo -->
-            <div class="toggle">
-                <a class="toggleMenu" href="#"><?php _e('Menu','restaurant'); ?></a>
-             </div><!-- toggle --> 
              <div class="sitenav">                  
                     <?php wp_nav_menu( array('theme_location' => 'primary')); ?>
               </div><!-- nav --><div class="clear"></div>
